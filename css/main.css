@@ -1,0 +1,208 @@
+/* 
+    Reaset All Elements
+*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+
+}
+body {
+    overflow-x: hidden;
+}
+/* 
+    Costmistion Form
+*/
+form {
+    background-color: #eee;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px 10px;
+}
+/* 
+    Costmistion Input Of Form
+*/
+form input{
+    width: 95%;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* 
+    Costmistion Second Input Of Form
+*/
+form input:last-child,
+form input:nth-child(2),
+form input:nth-child(3)
+ {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
+/* 
+    Costmistion Owner Channel
+*/
+.onwer,
+.full-videos {
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #eee;
+    font-size: 25px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.full-videos {
+    justify-content: center;
+}
+.owner-name {
+    font-weight: bold;
+    color: green;
+}
+.count-video {
+    color: red;
+    font-weight: bold;
+}
+.onwer span {
+    width: 50%;
+}
+/* 
+    Costmistion Result Div
+*/
+
+.results {
+    margin: 10px auto;
+    width: 80%;
+    padding: 15px 20px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 
+    Costmistion Caption Of Video
+*/
+.caption {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* 
+    Costmistion The main div of Results
+*/
+.results > div {
+    width: calc(96% / 3);
+    border-bottom: 2px solid white;
+    background-color: black;
+    color: white;
+    margin-left: 1%;
+    min-height: 370px;
+}
+/* 
+    Costmistion Title Of video Or playList
+*/
+.title {
+    padding: 5px 15px;
+    line-height: 1.8;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+/* 
+    Costmistion Title Of videoList
+*/
+.video-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+/* 
+    Costmistion Title Of videoList
+*/
+video {
+    width: 800px;
+    height: 100%;
+}
+.video {
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-color: red;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+/* 
+    Costmistion Count Of PlayList
+*/
+.count span {
+    display: block;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.8;
+    text-align: center;
+}
+/* 
+    Costmistion Img Of PlayList
+*/
+.img {
+    width: 100%;
+    height: 100%;
+}
+/* 
+    Costmistion If User Given a wrong id
+*/
+.wrong-id {
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* 
+    Costmistion Media
+*/
+@media (max-width: 1199px) {
+    .results > div {
+        width: calc(96% / 2);
+    }
+}
+
+@media (max-width: 991px) {
+
+    .results > div {
+        width: calc(97% / 1);
+    }
+    video {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width:768px) {
+    form,
+    .results {
+        width: 100%;
+        margin: initial;
+    }
+
+    .onwer {
+        font-size: 15px;
+    }
+}
