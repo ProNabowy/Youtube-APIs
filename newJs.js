@@ -29,7 +29,7 @@ function getRequst(typeCheck , check) {
         let totel;
         if(check === "three") totel = resolved.pageInfo.totalResults;
 
-        console.log(`%cHello, Channel Id is %c${data[0].snippet.channelId}` , `color:${'hsl(' + randomColor + ', 100% , 50%)'}; font-size:30px;" ` , `color:white; font-size:30px;`);
+        console.log(`%cHello, Channel Id is %c${data[0].snippet.channelId}` , `color:${'hsl(' + randomColor + ', 100% , 50%)'}; font-size:30px;" ` , `color:black; font-size:30px;`);
         
         let dataLength = data.length;
         
@@ -95,9 +95,9 @@ function toClickButton(btn, value ) {
         e.preventDefault();
         
         let inputValue = input.value;
-        let one = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${inputValue}&maxResults=50&key=AIzaSyDMQXoZaumplmctEQjB-6uLtKNfR_J1vXU`;
-        let two = `https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=${inputValue}&maxResults=50&key=AIzaSyDMQXoZaumplmctEQjB-6uLtKNfR_J1vXU`;
-        let three = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${inputValue}&maxResults=50000&order=date&key=AIzaSyDMQXoZaumplmctEQjB-6uLtKNfR_J1vXU`;
+        let one = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${inputValue}&maxResults=50&key=AIzaSyDiauR-jrYX3SMehcWK-vf7ae7l-opZQjU`;
+        let two = `https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=${inputValue}&maxResults=50&key=AIzaSyDiauR-jrYX3SMehcWK-vf7ae7l-opZQjU`;
+        let three = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${inputValue}&maxResults=50&order=date&key=AIzaSyDiauR-jrYX3SMehcWK-vf7ae7l-opZQjU`;
         if(value == "one") getRequst(one , "one");
         
         if(value == "two") getRequst(two , "two");
